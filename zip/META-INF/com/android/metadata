@@ -1,0 +1,3 @@
+post-build=Samsung/cm_gio/gio:4.2.1/JOP40D/eng.erikcas.20130203.090348:userdebug/test-keys
+post-timestamp=1359900273
+pre-device=gio
