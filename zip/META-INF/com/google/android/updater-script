@@ -1,7 +1,8 @@
 assert(getprop("ro.product.device") == "cooper" || getprop("ro.build.product") == "cooper" || 
-       getprop("ro.product.device") == "GT-S5830" || getprop("ro.build.product") == "GT-S5830"
+       getprop("ro.product.device") == "GT-S5830" || getprop("ro.build.product") == "GT-S5830");
 mount("ext4", "EMMC", "/dev/block/stl12", "/system");
 package_extract_dir("system", "/system");
+show_progress(0.200000, 10);
 assert(package_extract_file("boot.img", "/tmp/boot.img"),
        write_raw_image("/tmp/boot.img", "boot"),
        delete("/tmp/boot.img"));
